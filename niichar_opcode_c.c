@@ -1,16 +1,19 @@
 #include "monty.h"
 
 /**
- * _niichar_div - divides the second element by the top element of the stack
+ * _niichar_div - A function that divides the second element
+ * by the top element of the stack
  *
- * @linked_list_head: head of the linked list
- * @curr_line: line number;
+ * @linked_list_head: The head of the linked list
+ *
+ * @curr_line: Current line number;
+ *
  * Return: void
  */
 void _niichar_div(stack_t **linked_list_head, unsigned int curr_line)
 {
-	char *message;
 	int m = 0;
+	char *message;
 	stack_t *new_node = NULL;
 
 	new_node = *linked_list_head;
@@ -46,10 +49,13 @@ void _niichar_div(stack_t **linked_list_head, unsigned int curr_line)
 }
 
 /**
- * _niichar_mul - multiplies the top element to
+ * _niichar_mul - A func that multiplies the top element to
  * the second top element of the stack
- * @linked_list_head: head of the linked list
- * @curr_line: line number;
+ *
+ * @linked_list_head: Is the head of the linked list
+ *
+ * @curr_line: current line number;
+ *
  * Return: void
  */
 void _niichar_mul(stack_t **linked_list_head, unsigned int curr_line)
@@ -81,11 +87,13 @@ void _niichar_mul(stack_t **linked_list_head, unsigned int curr_line)
 }
 
 /**
- * _niichar_mod - computes the rest of the division of the second element
- * by the top element of the stack
+ * _niichar_mod - Func that computes the rest of the division
+ *  of the second element by the top element of the stack
  *
- * @linked_list_head: head of the linked list
- * @curr_line: line number;
+ * @linked_list_head: Is the head of the linked list
+ *
+ * @curr_line: current line number;
+ *
  * Return: void
  */
 void _niichar_mod(stack_t **linked_list_head, unsigned int curr_line)
@@ -127,10 +135,12 @@ void _niichar_mod(stack_t **linked_list_head, unsigned int curr_line)
 }
 
 /**
- * _niichar_pchar - print the char value of the first element
+ * _niichar_pchar - A func to print the char value of the first element
  *
- * @linked_list_head: head of the linked list
- * @curr_line: line number;
+ * @linked_list_head: The head of the linked list
+ *
+ * @curr_line: Current line number;
+ *
  * Return: void
  */
 void _niichar_pchar(stack_t **linked_list_head, unsigned int curr_line)
@@ -161,10 +171,12 @@ void _niichar_pchar(stack_t **linked_list_head, unsigned int curr_line)
 }
 
 /**
- * _niichar_pstr - prints the string of the stack
+ * _niichar_pstr - A func that prints the string of the stack
  *
- * @linked_list_head: head of the linked list
- * @curr_line: line number;
+ * @linked_list_head: The head of the linked list
+ *
+ * @curr_line: The current line number;
+ *
  * Return: void
  */
 void _niichar_pstr(stack_t **linked_list_head, unsigned int curr_line)

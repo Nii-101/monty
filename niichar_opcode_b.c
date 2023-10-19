@@ -1,11 +1,13 @@
 #include "monty.h"
 
 /**
- * _niichar_queue - sets the format of the data to a queue (FIFO)
+ * _niichar_queue - A func that sets the format of the data to a queue (FIFO)
  *
- * @linked_list_head: head of the linked list
- * @curr_line: line number;
- * Return: void
+ * @linked_list_head: Is the head of the linked list
+ *
+ * @curr_line: The current line number;
+ *
+ * Return: returns nothing (void)
  */
 void _niichar_queue(stack_t **linked_list_head, unsigned int curr_line)
 {
@@ -16,10 +18,12 @@ void _niichar_queue(stack_t **linked_list_head, unsigned int curr_line)
 }
 
 /**
- * _niichar_stack - sets the format fo the data to a stack (LIFO)
+ * _niichar_stack - A func that sets the format fo the data to a stack (LIFO)
  *
- * @linked_list_head: head of the linked list
- * @curr_line: line number;
+ * @linked_list_head: IS the head of the linked list
+ *
+ * @curr_line: The current line number;
+ *
  * Return: void
  */
 void _niichar_stack(stack_t **linked_list_head, unsigned int curr_line)
@@ -31,10 +35,12 @@ void _niichar_stack(stack_t **linked_list_head, unsigned int curr_line)
 }
 
 /**
- * _niichar_add - adds the top two elements of the stack
+ * _niichar_add - A function that adds the top two elements of the stack
  *
- * @linked_list_head: head of the linked list
- * @curr_line: line number;
+ * @linked_list_head: Is the head of the linked list
+ *
+ * @curr_line: The line number;
+ *
  * Return: void
  */
 void _niichar_add(stack_t **linked_list_head, unsigned int curr_line)
@@ -65,10 +71,12 @@ void _niichar_add(stack_t **linked_list_head, unsigned int curr_line)
 }
 
 /**
- * _niichar_nop - doesn't do anything
+ * _niichar_nop - a void function(Does nothing)
  *
- * @linked_list_head: head of the linked list
- * @curr_line: line number;
+ * @linked_list_head: The head of th lnked list
+ *
+ * @curr_line: Is the line number;
+ *
  * Return: void
  */
 void _niichar_nop(stack_t **linked_list_head, unsigned int curr_line)
@@ -78,10 +86,13 @@ void _niichar_nop(stack_t **linked_list_head, unsigned int curr_line)
 }
 
 /**
- * _niichar_sub - subtracts the top element to the second top element of the stack
+ * _niichar_sub -A function that subtracts the top element
+ * to the second top element of the stack
  *
- * @linked_list_head: head of the linked list
- * @curr_line: line number;
+ * @linked_list_head: The head of the linked list
+ *
+ * @curr_line: The line number;
+ *
  * Return: void
  */
 void _niichar_sub(stack_t **linked_list_head, unsigned int curr_line)

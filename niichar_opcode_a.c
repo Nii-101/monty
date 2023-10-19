@@ -1,16 +1,18 @@
 #include "monty.h"
 
 /**
- * _niichar_push - pushes an element to the stack
+ * _niichar_push - A function pushes an element to the stack
  *
- * @linked_list_head: head of the linked list
- * @curr_line: line number
+ * @linked_list_head: The head of the linked list
+ *
+ * @curr_line: Current line number
+ *
  * Return: void
  */
 void _niichar_push(stack_t **linked_list_head, unsigned int curr_line)
 {
+	int j, n;
 	char *message;
-	int n, j;
 
 	if (!niichar_global_var.arg)
 	{
@@ -46,10 +48,12 @@ void _niichar_push(stack_t **linked_list_head, unsigned int curr_line)
 }
 
 /**
- * _niichar_pall - prints all values on the stack
+ * _niichar_pall - A function that prints all values on the stack
  *
- * @linked_list_head: head of the linked list
- * @curr_line: line numbers
+ * @linked_list_head: The head of the linked list
+ *
+ * @curr_line: Current line numbers
+ *
  * Return: void
  */
 void _niichar_pall(stack_t **linked_list_head, unsigned int curr_line)
@@ -67,10 +71,12 @@ void _niichar_pall(stack_t **linked_list_head, unsigned int curr_line)
 }
 
 /**
- * _niichar_pint - prints the value at the top of the stack
+ * _niichar_pint - A func that prints the value at the top of the stack
  *
- * @linked_list_head: head of the linked list
- * @curr_line: line number
+ * @linked_list_head: The head of the linked list
+ *
+ * @curr_line: The current line number
+ *
  * Return: void
  */
 void _niichar_pint(stack_t **linked_list_head, unsigned int curr_line)
@@ -93,10 +99,12 @@ void _niichar_pint(stack_t **linked_list_head, unsigned int curr_line)
 }
 
 /**
- * _niichar_pop - removes the top element of the stack
+ * _niichar_pop - A func that removes the top element of the stack
  *
- * @linked_list_head: head of the linked list
- * @curr_line: line number
+ * @linked_list_head: The head of the linked list
+ *
+ * @curr_line: Current line number
+ *
  * Return: void
  */
 void _niichar_pop(stack_t **linked_list_head, unsigned int curr_line)
@@ -120,24 +128,26 @@ void _niichar_pop(stack_t **linked_list_head, unsigned int curr_line)
 }
 
 /**
- * _niichar_swap - swaps the top two elements of the stack
+ * _niichar_swap - Func that swaps the top two elements of the stack
  *
- * @linked_list_head: head of the linked list
- * @curr_line: line number
+ * @linked_list_head: The head of the linked list
+ *
+ * @curr_line: The current line number
+ *
  * Return: void
  */
 void _niichar_swap(stack_t **linked_list_head, unsigned int curr_line)
 {
 	char *message;
-	int m = 0;
+	int a = 0;
 	stack_t *new_node = NULL;
 
 	new_node = *linked_list_head;
 
-	for (; new_node != NULL; new_node = new_node->next, m++)
+	for (; new_node != NULL; new_node = new_node->next, a++)
 		;
 
-	if (m < 2)
+	if (a < 2)
 	{
 		message = malloc(sizeof(char) * NIICHAR_MAX_BUFFER_SIZE);
 		snprintf(message, NIICHAR_MAX_BUFFER_SIZE,
